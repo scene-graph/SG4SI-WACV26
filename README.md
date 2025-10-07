@@ -13,6 +13,9 @@ such as image / video generation, visual question answering, spatial reasoning, 
 - **Scene Graph Benchmark and Evaluation**, design of new benchmarks, and metrics for scene graph
 quality, cross-modal grounding, reasoning ability, controllability, and generalization across domains.
 
+For the latest papers and datasets on scene graph research, please refer to
+<a href="https://github.com/ChocoWu/Awesome-Scene-Graph-Generation" target="_blank" rel="noopener">Awesome-Scene-Graph-Generation</a>.
+This repository is regularly updated and provides valuable resources for your submission.
 
 ## Submission Guidances
 We welcome the submission of long, short, and demo papers. Long papers may include up to 8 pages
