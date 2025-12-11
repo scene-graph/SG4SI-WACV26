@@ -1,6 +1,9 @@
 # SG4SI-WACV26
 Workshop of Scene Graph for Structural Intelligence (SG4SI) @ WACV26
 
+## News
+
+The submission deadline is extended to `December 20, 2025, 11:59 PST` (finalized and fixed).
 
 ## Call for Papers
 We invite original research contributions in (but not limited to) the following areas:
@@ -27,10 +30,10 @@ workshop proceedings; we particularly encourage long papers to be included. All 
 ## Important Dates
 
 - Submission Deadline
-    - December 15, 2025, 11:59 AOE
+    - December 20, 2025, 11:59 PST
 - Notification of Acceptance
-    - January 6, 2026, 11:59 AOE
+    - January 2, 2026, 11:59 PST
 - Camera-ready Deadline
-    - January 10, 2026, 11:59 AOE
+    - January 6, 2026, 11:59 PST
 - Workshop Date
-    - March 06, 2026
+    - March 7, 2026
