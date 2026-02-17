@@ -5920,3 +5920,94 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Schedule Table Styles
+# Custom styling to harmonize the schedule table with site theme
+--------------------------------------------------------------*/
+.schedule-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--surface-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(34,18,2,0.06);
+  font-size: 0.98rem;
+}
+
+.schedule-table thead tr {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent-color), transparent 90%), rgba(255,255,255,0));
+}
+
+.schedule-table thead th {
+  padding: 16px 18px;
+  font-weight: 700;
+  color: var(--heading-color);
+  border-bottom: 1px solid rgba(34,18,2,0.06);
+  text-align: left;
+}
+
+.schedule-table tbody td {
+  padding: 16px 18px;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(34,18,2,0.04);
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+
+.schedule-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.schedule-table tbody tr:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 96%);
+}
+
+.schedule-table td:first-child {
+  width: 170px;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--default-color), transparent 0%);
+}
+
+.schedule-table td:nth-child(3) {
+  width: 120px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.schedule-table td:nth-child(4) {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.schedule-table .coffee {
+  font-size: 1.02rem;
+}
+
+@media (max-width: 767px) {
+  .schedule-table thead { display: none; }
+  .schedule-table, .schedule-table tbody, .schedule-table tr, .schedule-table td { display: block; width: 100%; }
+  .schedule-table tr { margin-bottom: 12px; border-radius: 8px; background: var(--surface-color); box-shadow: 0 6px 18px rgba(34,18,2,0.04); padding: 10px; }
+  .schedule-table td { padding: 8px 10px; border-bottom: none; }
+  .schedule-table td:first-child { font-weight: 700; color: var(--heading-color); }
+  .schedule-table td:nth-child(2) { margin-top: 6px; }
+  .schedule-table td:nth-child(3), .schedule-table td:nth-child(4) { color: color-mix(in srgb, var(--default-color), transparent 40%); }
+}
+
+/* Speaker avatar clickable styles */
+.speaker-image img {
+  cursor: pointer;
+  transition: transform 0.18s ease;
+}
+.speaker-image img:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.modal .modal-title {
+  font-weight: 700;
+}
+
+.speaker-content .speaker-name {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
