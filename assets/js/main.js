@@ -97,10 +97,18 @@
   function updateCountDown(countDownItem) {
     const timeleft = new Date(countDownItem.getAttribute('data-count')).getTime() - new Date().getTime();
 
-    const days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+    // If the event time has passed, display 0 instead of negative values
+    if (timeleft <= 0) {
+      days = 0;
+      hours = 0;
+      minutes = 0;
+      seconds = 0;
+    }
 
     const daysElement = countDownItem.querySelector('.count-days');
     const hoursElement = countDownItem.querySelector('.count-hours');
